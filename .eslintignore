@@ -1,0 +1,22 @@
+**/*.config.js
+**/*.config.ts
+**/*.css
+**/*.scss
+**/*.js
+**/*.jsx
+**/*.stories.js
+**/*.stories.tsx
+**/config/
+**/dist/
+**/generated/
+**/node_modules/
+**/types
+config/
+playground/storybook-static
+dist/
+node_modules/
+/* TODO: don't disable eslint here */
+ssr-service/
+.github/
+README.md
+

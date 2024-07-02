@@ -1,0 +1,14 @@
+**/build/
+**/coverage/**
+**/dist/
+**/generated/
+**/node_modules/**
+.yarn
+build/
+playground/storybook-static
+dist/
+node_modules/**
+**/stats.html
+**/playwright-report/**
+.github/
+README.md

@@ -1,0 +1,50 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "arrow-body-style": ["error", "always"],
+    "@typescript-eslint/no-var-requires": "off",
+    "linebreak-style": ["error", "unix"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true, 
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  }
+}
